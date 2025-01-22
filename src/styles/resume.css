@@ -1,0 +1,373 @@
+.resume {
+    padding: 2rem;
+    font-family: "Poppins", sans-serif;
+    color: #333;
+}
+
+.resume h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-align: center;
+    color: #333;
+    margin-bottom: 2rem;
+}
+
+.resume-header {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.resume-header p {
+    font-size: 8px;
+    text-transform: uppercase;
+    color: #ff6f61;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.resume-header h2 {
+    font-size: 40px;
+    font-weight: 700;
+    color: #333;
+    margin-top: 0.5rem;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    gap: 1rem;
+}
+
+.tabs button {
+    padding: 0.7rem 1.5rem;
+    border: none;
+    color: black;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 600;
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+    transition: all 0.2s ease-in-out;
+}
+
+.tabs button:hover {
+    transform: scale(1.1);
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+    color: white;
+    background-color: red;
+}
+
+.tabs button.active {
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+}
+
+.timeline-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+}
+
+.timeline-column {
+    flex: 1;
+    max-width: 90%;
+}
+
+/* Timeline Cards */
+.timeline-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+    padding: 1.5rem;
+    margin-bottom: 1.5rem;
+    color: black;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+.timeline-card:hover {
+    transform: scale(1.01);
+    box-shadow: 5px 5px 15px #d1d9e6, -5px -5px 15px #ffffff;
+    background-color: red;
+}
+
+.timeline-card:hover p {
+    color: white;
+}
+
+.timeline-card:hover h3 {
+    color: white;
+}
+
+.timeline-card:hover .rating {
+    background-color: white;
+    color: red;
+}
+
+.timeline-card h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: black;
+    margin-bottom: 0.5rem;
+}
+
+.timeline-card p {
+    color: #727272;
+    margin-bottom: 0.5rem;
+    font-size: 14px;
+}
+
+.timeline-card .rating {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: #ff1500;
+    color: white;
+    padding: 0.3rem 0.8rem;
+    font-weight: 600;
+    font-size: 0.9rem;
+    border-radius: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .timeline-container {
+        flex-direction: column;
+    }
+
+    .timeline-column {
+        max-width: 100%;
+    }
+}
+
+.skills-bar-container {
+    width: 70%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.skills-bar-container li {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1.5rem;
+    padding: 0 5px;
+    list-style: none;
+}
+
+.skills-bar-container li .progressbar-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.skills-bar-container li .progressbar-title h3 {
+    font-size: 1rem;
+    margin: 0;
+    color: #333;
+}
+
+.skills-bar-container li .progressbar-title .percent {
+    font-size: 0.9rem;
+    color: #555;
+}
+
+.skills-bar-container li .bar-container {
+    background: #e0e0e0;
+    border-radius: 5px;
+    overflow: hidden;
+    position: relative;
+    height: 10px;
+    width: 100%;
+}
+
+.skills-bar-container li .bar-container .progressbar {
+    position: absolute;
+    height: 100%;
+    border-radius: 5px;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+}
+
+/* Progress Bar Colors */
+.progressred {
+    background-color: #c0392b;
+}
+
+.progressblue {
+    background-color: #1199ff;
+}
+
+.progresspurple {
+    background-color: #9b59b6;
+}
+
+.progressorange {
+    background-color: #ffa500;
+}
+
+.progressgreen {
+    background-color: #27ae60;
+}
+
+.progressyellow {
+    background-color: #f1c40f;
+}
+
+/* Keyframe Animations */
+@keyframes progress-html {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 90%;
+    }
+}
+
+@keyframes progress-css {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress-javascript {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 85%;
+    }
+}
+
+@keyframes progress-php {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress-angular {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress-bootstrap {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress-react {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 95%;
+    }
+}
+
+@keyframes progress-jquery {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 80%;
+    }
+}
+
+@keyframes progress-c {
+    0% {
+        width: 0%;
+    }
+
+    100% {
+        width: 75%;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .skills-bar-container {
+        width: 85%;
+        /* Slightly wider for medium screens */
+    }
+
+    .skills-bar-container li .progressbar-title {
+        font-size: 0.95rem;
+    }
+
+    .skills-bar-container li .progressbar-title .percent {
+        font-size: 0.85rem;
+    }
+
+    .skills-bar-container li .bar-container {
+        height: 8px;
+        /* Slightly smaller bars */
+    }
+}
+
+@media (max-width: 768px) {
+    .skills-bar-container {
+        width: 90%;
+        /* Almost full width for smaller screens */
+    }
+
+    .skills-bar-container li {
+        margin-bottom: 1rem;
+    }
+
+    .skills-bar-container li .progressbar-title {
+        flex-direction: column;
+        align-items: flex-start;
+        font-size: 0.9rem;
+    }
+
+    .skills-bar-container li .progressbar-title .percent {
+        font-size: 0.8rem;
+        margin-top: 0.3rem;
+    }
+
+    .skills-bar-container li .bar-container {
+        height: 7px;
+    }
+}
+
+@media (max-width: 480px) {
+    .skills-bar-container {
+        width: 95%;
+        /* Maximum width for very small screens */
+    }
+
+    .skills-bar-container li .progressbar-title h3,
+    .skills-bar-container li .progressbar-title .percent {
+        font-size: 0.8rem;
+    }
+
+    .skills-bar-container li .bar-container {
+        height: 6px;
+    }
+}
