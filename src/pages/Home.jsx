@@ -3,7 +3,7 @@ import "../styles/home.css";
 import umang from '../images/owner.jpg'
 
 const Home = () => {
-    const textArray = [" Full Stack Developer.", "Professional Coder."];
+    const textArray = [" Front-End Developer.", "Professional Coder."];
     const typingDelay = 150; // Typing speed
     const erasingDelay = 100; // Erasing speed
     const newTextDelay = 2000; // 2-second delay before erasing
